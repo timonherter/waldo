@@ -1,6 +1,9 @@
 # Waldo - Steganography in Compressed JPEG Images
 ### Timon Herter
 
+## This project is a work in progress. Commits are not backward compatable.
+### Remember the liability disclaimer.
+
 ## Overview
 This project hides messages within the image data of JPEG-1 encoded images.
 
@@ -35,6 +38,6 @@ file where it will write the hidden message.
 
 ## Roadmap
 
++ Development: Modify pseudorandom blocks in the image rather than sequential blocks
 + Development: Add functionality to insert arbitrary files rather than just text
 + Development: Add functionality to encrypt and decrypt data as it is inserted or read from the image
-+ Development: Modify pseudorandom blocks in the image rather than sequential blocks
