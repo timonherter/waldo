@@ -128,7 +128,7 @@ void updateCoefficients(FILE* file, int seed, j_decompress_ptr imgInfo, jvirt_ba
             block[offset] = 2;
         } else if(next == EOF && row < imgInfo->comp_info[0].height_in_blocks) {
             buffer = (imgInfo->mem->access_virt_barray)((j_common_ptr)imgInfo, coeffs[0], row + 1, (JDIMENSION)1, TRUE);
-            block = buffer[0];
+            block = buffer[0][0];
 
             block[offset] = 2;
         }
